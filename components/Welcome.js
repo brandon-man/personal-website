@@ -20,8 +20,7 @@ function Welcome() {
         as="main"
         justifyContent="center"
         alignItems="flex-start"
-        m="0 auto 4rem auto"
-        maxWidth="700px"
+        m="0 auto 4rem auto"      
         h={800}
       >
         <Flex
