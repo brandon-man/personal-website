@@ -40,7 +40,6 @@ const Container = ({ children }) => {
         justifyContent="space-between"
         alignItems="center"
         maxWidth="450px"
-        minWidth="356px"
         width="100%"
         as="nav"
         px={[2, 6, 6]}
