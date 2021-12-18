@@ -16,7 +16,7 @@ import ChakraCarousel from "./ChakraCarousel";
 
 function Projects() {
   return (
-    <Box maxHeight="150vh">
+    <Box>
       <Container
         py={8}
         px={0}
@@ -24,7 +24,9 @@ function Projects() {
           base: "100%",
           sm: "35rem",
           md: "43.75rem",
-          lg: "65.5rem",
+          lg: "57.5rem",
+          xl: "75rem",
+          xxl: "87.5rem"
         }}
       >
         <ChakraCarousel gap={32}>
