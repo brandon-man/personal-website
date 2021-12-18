@@ -38,7 +38,7 @@ const Container = ({ children }) => {
       <StickNav
         flexDirection="row"
         justifyContent="space-between"
-        alignItems="center"
+        alignItems="flex-end"
         maxWidth="450px"
         width="100%"
         as="nav"
