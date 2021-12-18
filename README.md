@@ -1,3 +1,3 @@
-https://personal-website-brandon-man.vercel.app/
-
 Personal website to showcase my portfolio.
+
+https://www.brandon-man.vercel.app/
