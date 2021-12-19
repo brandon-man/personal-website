@@ -33,14 +33,14 @@ const Container = ({ children }) => {
 
   const handleClickPortfolio = () => window.scrollTo({ top: 900 });
   const handleClickContact = () => window.scrollTo({ top: 1700 });
+
   return (
     <Box bg={bgColor[colorMode]}>
       <StickNav
         flexDirection="row"
         justifyContent="space-between"
         alignItems="flex-end"
-        maxWidth="450px"
-        width="100%"
+        maxWidth={["330px", '450px']}
         as="nav"
         px={[2, 6, 6]}
         py={2}
@@ -48,7 +48,7 @@ const Container = ({ children }) => {
         ms="auto"
       >
         <Box>
-          <NextLink href="/#top" passHref>
+          <NextLink href="/" passHref>
             <Button
               as="a"
               rounded={20}
@@ -91,7 +91,7 @@ const Container = ({ children }) => {
           >
             Contact
           </Button>
-          <NextLink href="/About/about" passHref>
+          <NextLink href="/about" passHref>
             <Button
               as="a"
               rounded={20}

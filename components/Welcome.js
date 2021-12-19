@@ -21,7 +21,7 @@ function Welcome() {
         justifyContent="center"
         alignItems="flex-start"
         m="0 auto 4rem auto"      
-        h={800}
+        h={['650px','800px']}
       >
         <Flex
           flexDirection="column"
@@ -29,12 +29,12 @@ function Welcome() {
           alignItems="center"
           maxWidth="700px"
         >
-          <Heading className={Typewriter.typeWrite} fontSize="4.7em" m={8}>
+          <Heading className={Typewriter.typeWrite} fontSize={[ '1.8em', '4.7em' ]} m={['0', '8']}>
             hello, i'm brandon
           </Heading>
-          <Text color={colorSecondary[colorMode]} fontSize="lg" m={8}>
+          <Text color={colorSecondary[colorMode]} fontSize={['sm','lg']} m={8}>
             I create{" "}
-            <Code fontSize="lg" colorScheme="facebook">
+            <Code fontSize={['sm','lg']} colorScheme="facebook">
               code
             </Code>{" "}
             for the web.

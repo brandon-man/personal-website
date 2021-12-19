@@ -25,7 +25,7 @@ function Footer() {
           <SocialMediaLinks />
         </Stack>
       </Stack>
-      {scrollPosition > 500 && (
+      {scrollPosition > 800 && (
         <Link href="/#top">
           <Box
             position="fixed"
