@@ -7,7 +7,11 @@ import Container from "../components/Container";
 function About() {
   return (
     <Container>
-      <Grid templateColumns="repeat(2, auto)" gap={['6','10']} h={['610','710']}>
+      <Grid
+        templateColumns="repeat(2, auto)"
+        gap={["6", "10"]}
+        h={["610", "710"]}
+      >
         <Stack
           justifyContent="center"
           alignItems="flex-start"
@@ -40,20 +44,20 @@ function About() {
           maxWidth={760}
           spacing={6}
         >
-          <Heading fontSize={["xl","4xl"]}>Hello!</Heading>
-          <Text fontSize={["sm","lg"]}>
+          <Heading fontSize={["xl", "4xl"]}>Hello!</Heading>
+          <Text fontSize={["sm", "lg"]}>
             Worked in finance, now a software engineer. I have always loved to
             build things and now I can test my creative and technical know-how
             through coding.
           </Text>
-          <Text fontSize={["sm","lg"]}>
+          <Text fontSize={["sm", "lg"]}>
             I have always felt a sense of accomplishment after overcoming a big
             obstacle and this holds true for both my personal and work life.
             This picture of me was when I walked the challenging and grueling
             but ultimately rewarding pilgrimage called the Camino de Santiago in
             Spain.
           </Text>
-          <Text fontSize={["sm","lg"]}>
+          <Text fontSize={["sm", "lg"]}>
             If you need a problem to be solved or just want to connect, you can
             always reach me through e-mail or LinkedIn.
           </Text>

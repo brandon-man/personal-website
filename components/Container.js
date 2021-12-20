@@ -1,7 +1,6 @@
 import { useColorMode, Button, Flex, Box } from "@chakra-ui/react";
 import NextLink from "next/link";
 import styled from "@emotion/styled";
-import React from "react";
 
 import DarkModeSwitch from "../components/DarkModeSwitch";
 
@@ -30,17 +29,13 @@ const Container = ({ children }) => {
     backdrop-filter: saturate(180%) blur(20px);
     transition: height 0.5s, line-height 0.5s;
   `;
-
-  const handleClickPortfolio = () => window.scrollTo({ top: 900 });
-  const handleClickContact = () => window.scrollTo({ top: 1700 });
-
   return (
     <Box bg={bgColor[colorMode]}>
       <StickNav
         flexDirection="row"
         justifyContent="space-between"
         alignItems="flex-end"
-        maxWidth={["330px", '450px']}
+        maxWidth={["330px", "450px"]}
         as="nav"
         px={[2, 6, 6]}
         py={2}
@@ -63,34 +58,36 @@ const Container = ({ children }) => {
               Home
             </Button>
           </NextLink>
-          <Button
-            as="a"
-            onClick={handleClickPortfolio}
-            rounded={20}
-            variant="ghost"
-            p={[1, 2, 4]}
-            _hover={{
-              color: "teal",
-              stroke: "teal",
-              backgroundColor: navHoverBg[colorMode],
-            }}
-          >
-            Portfolio
-          </Button>
-          <Button
-            as="a"
-            onClick={handleClickContact}
-            rounded={20}
-            variant="ghost"
-            p={[1, 2, 4]}
-            _hover={{
-              color: "teal",
-              stroke: "teal",
-              backgroundColor: navHoverBg[colorMode],
-            }}
-          >
-            Contact
-          </Button>
+          <NextLink href="/#portfolio" passHref>
+            <Button
+              as="a"
+              rounded={20}
+              variant="ghost"
+              p={[1, 2, 4]}
+              _hover={{
+                color: "teal",
+                stroke: "teal",
+                backgroundColor: navHoverBg[colorMode],
+              }}
+            >
+              Portfolio
+            </Button>
+          </NextLink>
+          <NextLink href="/#contact" passHref>
+            <Button
+              as="a"
+              rounded={20}
+              variant="ghost"
+              p={[1, 2, 4]}
+              _hover={{
+                color: "teal",
+                stroke: "teal",
+                backgroundColor: navHoverBg[colorMode],
+              }}
+            >
+              Contact
+            </Button>
+          </NextLink>
           <NextLink href="/about" passHref>
             <Button
               as="a"

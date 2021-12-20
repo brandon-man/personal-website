@@ -8,7 +8,7 @@ function Contact() {
       alignItems="flex-start"
       m="0 auto auto auto"
       maxWidth="700px"
-      h={['600','800']}
+      h={["600", "800"]}
     >
       <Flex
         flexDirection="column"
@@ -16,10 +16,10 @@ function Contact() {
         alignItems="center"
         maxWidth="700px"
       >
-        <Heading fontSize={["3xl","5xl"]} m={8}>
+        <Heading fontSize={["3xl", "5xl"]} m={8}>
           Hello / こんにちは!
         </Heading>
-        <Text fontSize={["md","xl"]} m={10}>
+        <Text fontSize={["md", "xl"]} m={10}>
           For any inquiries, whether it's for work opportunities or just to say
           hi, feel free to message me.
         </Text>

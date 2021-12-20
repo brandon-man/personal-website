@@ -1,8 +1,8 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 function Meta({
-  title = 'Brandon Man',
-  description = 'My personal website built with Next.js and Chakra UI',
+  title = "Brandon Man",
+  description = "My personal website built with Next.js and Chakra UI",
 }) {
   return (
     <>
@@ -12,7 +12,7 @@ function Meta({
         <title>{title}</title>
       </Head>
     </>
-  )
+  );
 }
 
-export default Meta
+export default Meta;
