@@ -35,7 +35,7 @@ const Container = ({ children }) => {
         flexDirection="row"
         justifyContent="space-between"
         alignItems="flex-end"
-        maxWidth={["330px", "450px"]}
+        maxWidth={["330", "400", "450"]}
         as="nav"
         px={[2, 6, 6]}
         py={2}

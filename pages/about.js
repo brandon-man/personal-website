@@ -8,15 +8,15 @@ function About() {
   return (
     <Container>
       <Grid
-        templateColumns="repeat(2, auto)"
+        templateColumns={["repeat(2)", "repeat(2, auto)"]}
         gap={["6", "10"]}
-        h={["610", "710"]}
+        h={["850", "860", "710"]}
       >
         <Stack
           justifyContent="center"
           alignItems="flex-start"
           m="auto 0 auto auto"
-          maxWidth="700px"
+          maxWidth="700"
         >
           <Flex
             boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
