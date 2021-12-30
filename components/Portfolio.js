@@ -5,7 +5,6 @@ import {
   Heading,
   Button,
   VStack,
-  HStack,
   Container,
   Image,
 } from "@chakra-ui/react";
@@ -94,7 +93,6 @@ function Projects() {
               </VStack>
 
               <Flex justifyContent="space-between">
-                <HStack spacing={2}></HStack>
                 <NextLink href="/#top" passHref>
                   <Button
                     rightIcon={<ArrowForwardIcon />}
