@@ -12,45 +12,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 import NextLink from "next/link";
 import ChakraCarousel from "./ChakraCarousel";
-
-const cards = [
-  {
-    image:
-      "https://images.unsplash.com/photo-1639415013200-e604f5439fad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    title: "Project 1",
-    body: "Body",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1637783497754-3a1a8107c8af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    title: "Project 2",
-    body: "Body",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1637789714202-a6587b09d73e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    title: "Project 3",
-    body: "Body",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1640033139299-348b248dba54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    title: "Project 4",
-    body: "Body",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1640032549163-5c3fb8fa97fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=843&q=80",
-    title: "Project 5",
-    body: "Body",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1640018776987-623cfd6d8ed9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    title: "Project 6",
-    body: "Body",
-  },
-];
+import projects from "../data/projects";
 
 function Projects() {
   return (
@@ -66,9 +28,9 @@ function Projects() {
         }}
       >
         <ChakraCarousel gap={32}>
-          {cards.map((item, index) => (
+          {projects.map((project) => (
             <Flex
-              key={index}
+              key={project.id}
               boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
               justifyContent="space-between"
               flexDirection="column"
@@ -78,7 +40,7 @@ function Projects() {
               flex={1}
               p={5}
             >
-              <Image height="100%" objectFit="cover" src={item.image} />
+              <Image height="100%" objectFit="cover" src={project.image} />
               <VStack mb={6}>
                 <Heading
                   fontSize={{ base: "xl", md: "2xl" }}
@@ -87,13 +49,13 @@ function Projects() {
                   mb={2}
                   p={2}
                 >
-                  {item.title}
+                  {project.title}
                 </Heading>
-                <Text w="full">{item.body}</Text>
+                <Text w="full">{project.body}</Text>
               </VStack>
 
               <Flex justifyContent="space-between">
-                <NextLink href="/#top" passHref>
+                <NextLink href={project.link} passHref>
                   <Button
                     rightIcon={<ArrowForwardIcon />}
                     variant="outline"
