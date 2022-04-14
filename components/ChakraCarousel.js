@@ -66,14 +66,15 @@ const ChakraCarousel = ({ children, gap }) => {
       setConstraint(1);
     }
     if (isBetweenMdAndXl) {
-      setItemWidth(sliderWidth / 2 - gap);
+      setItemWidth(sliderWidth - gap);
       setMultiplier(0.5);
-      setConstraint(2);
+      setConstraint(1);
     }
+    // set how many can be seen at once with sliderWidth / n - gap
     if (isGreaterThanXL) {
-      setItemWidth(sliderWidth / 3 - gap);
+      setItemWidth(sliderWidth - gap);
       setMultiplier(0.35);
-      setConstraint(3);
+      setConstraint(1);
     }
   }, [isBetweenBaseAndMd, isBetweenMdAndXl, isGreaterThanXL, sliderWidth, gap]);
 
@@ -156,10 +157,12 @@ const Slider = ({
 
   return (
     <>
+      {/* Card */}
       <Box
         ref={ref}
-        w={{ base: "100%", md: `calc(100% + ${gap}px)` }}
-        ml={{ base: 0, md: `-${gap / 2}px` }}
+        w={{ base: "100%", md: `calc(50%)` }}
+        ml="auto"
+        mr="auto"
         px={`${gap / 2}px`}
         position="relative"
         overflow="hidden"
@@ -186,7 +189,7 @@ const Slider = ({
       >
         {children}
       </Box>
-
+      {/* Sliders */}
       <Flex w={`${itemWidth}px`} mt={`${gap / 2}px`} mx="auto">
         <Button
           onClick={handleDecrementClick}
