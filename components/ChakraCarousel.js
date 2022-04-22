@@ -160,7 +160,7 @@ const Slider = ({
       {/* Card */}
       <Box
         ref={ref}
-        w={{ base: "100%", md: `calc(50%)` }}
+        w={{ base: "100%", md: `calc(40%)` }}
         ml="auto"
         mr="auto"
         px={`${gap / 2}px`}

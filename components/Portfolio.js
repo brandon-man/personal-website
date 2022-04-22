@@ -40,7 +40,12 @@ function Projects() {
               flex={1}
               p={5}
             >
-              <Image height="100%" objectFit="cover" src={project.image} />
+              <Image
+                height="50%"
+                width="100%"
+                objectFit="cover"
+                src={project.image}
+              />
               <VStack mb={6}>
                 <Heading
                   fontSize={{ base: "xl", md: "2xl" }}
