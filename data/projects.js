@@ -8,11 +8,10 @@ const projects = [
   },
   {
     id: 2,
-    image:
-      "https://images.unsplash.com/photo-1637783497754-3a1a8107c8af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    title: "Project 2",
-    body: "Body",
-    link: "/#top",
+    image: "/images/mistyrose-ipear.png",
+    title: "iPear",
+    body: "An e-commerce site created with the PERN stack. Utilized React as a framework, while managing states using Redux Toolkit with Express RESTful APIs.",
+    link: "https://mistyrose-ipear.herokuapp.com",
   },
 ];
 

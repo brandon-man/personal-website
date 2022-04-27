@@ -7,8 +7,9 @@ import {
   VStack,
   Container,
   Image,
+  Link,
 } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { ArrowForwardIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 
 import NextLink from "next/link";
 import ChakraCarousel from "./ChakraCarousel";
@@ -60,17 +61,16 @@ function Projects() {
               </VStack>
 
               <Flex justifyContent="space-between">
-                <NextLink href={project.link} passHref>
+                <Link href={project.link} isExternal>
                   <Button
-                    rightIcon={<ArrowForwardIcon />}
                     variant="outline"
                     colorScheme="teal"
                     fontWeight="bold"
                     size="sm"
                   >
-                    More
+                    More <ExternalLinkIcon mx="6px" />
                   </Button>
-                </NextLink>
+                </Link>
               </Flex>
             </Flex>
           ))}
