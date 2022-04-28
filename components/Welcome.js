@@ -21,7 +21,7 @@ function Welcome() {
         justifyContent="center"
         alignItems="flex-start"
         m="0 auto 4rem auto"
-        h={["400px", "600px"]}
+        h={["500px", "750px"]}
       >
         <Flex
           flexDirection="column"
