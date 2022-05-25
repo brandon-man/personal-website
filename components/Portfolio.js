@@ -7,10 +7,9 @@ import {
   VStack,
   Container,
   Image,
-  Link,
+  Divider,
 } from "@chakra-ui/react";
-import { ArrowForwardIcon, ExternalLinkIcon } from "@chakra-ui/icons";
-
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 import ChakraCarousel from "./ChakraCarousel";
 import projects from "../data/projects";
@@ -41,15 +40,11 @@ function Projects() {
               flex={1}
               p={5}
             >
-              <Image
-                height="50%"
-                width="100%"
-                objectFit="cover"
-                src={project.image}
-              />
+              <Image objectFit="cover" src={project.image} />
               <VStack mb={6}>
                 <Heading
-                  fontSize={{ base: "xl", md: "2xl" }}
+                  color="teal"
+                  fontSize={{ base: "xl", md: "40" }}
                   textAlign="center"
                   w="full"
                   mb={2}
@@ -57,20 +52,30 @@ function Projects() {
                 >
                   {project.title}
                 </Heading>
-                <Text w="full">{project.body}</Text>
+
+                <Text textAlign="center" w="full" fontSize="lg">
+                  {project.body}
+                </Text>
+
+                <Divider />
+
+                <Heading textAlign="center" w="full" fontSize="md" p={2}>
+                  About
+                </Heading>
+                <Text>{project.desc}</Text>
               </VStack>
 
-              <Flex justifyContent="space-between">
-                <Link href={project.link} isExternal>
+              <Flex justifyContent="flex-end">
+                <NextLink href={project.link} passHref>
                   <Button
                     variant="outline"
                     colorScheme="teal"
                     fontWeight="bold"
                     size="sm"
                   >
-                    More <ExternalLinkIcon mx="6px" />
+                    More <ArrowForwardIcon mx="6px" />
                   </Button>
-                </Link>
+                </NextLink>
               </Flex>
             </Flex>
           ))}

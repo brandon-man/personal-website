@@ -10,7 +10,7 @@ function About() {
       <Grid
         templateColumns={["repeat(2)", "repeat(2, auto)"]}
         gap={["6", "10"]}
-        h={["850", "860", "710"]}
+        h={["850", "860", "750"]}
       >
         <Stack
           justifyContent="center"
