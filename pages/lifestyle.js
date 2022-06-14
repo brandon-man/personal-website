@@ -12,7 +12,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { FaGithub } from "react-icons/fa";
 import Container from "../components/Container";
 
-function FirstProject() {
+function Lifestyle() {
   return (
     <Container>
       <VStack alignSelf="center" p={4} maxW="50%">
@@ -70,4 +70,4 @@ function FirstProject() {
   );
 }
 
-export default FirstProject;
+export default Lifestyle;

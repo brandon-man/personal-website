@@ -12,7 +12,7 @@ import { ExternalLinkIcon, LinkIcon } from "@chakra-ui/icons";
 import { FaGithub } from "react-icons/fa";
 import Container from "../components/Container";
 
-function ThirdProject() {
+function IPear() {
   return (
     <Container>
       <VStack alignSelf="center" p={4} maxW="50%">
@@ -79,4 +79,4 @@ function ThirdProject() {
   );
 }
 
-export default ThirdProject;
+export default IPear;

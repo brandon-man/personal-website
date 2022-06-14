@@ -12,7 +12,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { FaGithub } from "react-icons/fa";
 import Container from "../components/Container";
 
-function SecondProject() {
+function MyCha() {
   return (
     <Container>
       <VStack alignSelf="center" p={4} maxW="50%">
@@ -57,4 +57,4 @@ function SecondProject() {
   );
 }
 
-export default SecondProject;
+export default MyCha;
