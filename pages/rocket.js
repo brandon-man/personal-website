@@ -29,7 +29,7 @@ function Rocket() {
         <Image objectFit="cover" src="images/rocket.png" />
         <HStack justifyContent="space-around">
           <VStack alignItems="flex-start" p={4}>
-            <Heading size="sm">April 2022</Heading>
+            <Heading size="sm">June 2022</Heading>
 
             <Link
               href="https://github.com/brandon-man/rocket-frontend"
