@@ -2,7 +2,7 @@
 
 Personal website to showcase my portfolio.
 
-https://www.brandon-man.vercel.app/
+https://www.brandon-man.com
 
 #### Tech stack
 
